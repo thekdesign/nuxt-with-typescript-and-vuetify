@@ -31,28 +31,28 @@
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-btn
-        @click.stop="miniVariant = !miniVariant"
         icon
+        @click.stop="miniVariant = !miniVariant"
       >
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
       <v-btn
-        @click.stop="clipped = !clipped"
         icon
+        @click.stop="clipped = !clipped"
       >
         <v-icon>mdi-application</v-icon>
       </v-btn>
       <v-btn
-        @click.stop="fixed = !fixed"
         icon
+        @click.stop="fixed = !fixed"
       >
         <v-icon>mdi-minus</v-icon>
       </v-btn>
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <v-btn
-        @click.stop="rightDrawer = !rightDrawer"
         icon
+        @click.stop="rightDrawer = !rightDrawer"
       >
         <v-icon>mdi-menu</v-icon>
       </v-btn>
@@ -109,6 +109,7 @@ export default class Default extends Vue {
       to: '/inspire'
     }
   ];
+
   miniVariant: boolean = false;
   right: boolean = true;
   rightDrawer: boolean = false;

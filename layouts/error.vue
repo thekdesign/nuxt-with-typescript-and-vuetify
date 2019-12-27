@@ -21,15 +21,15 @@ import { Vue, Component, Prop } from 'nuxt-property-decorator'
 export default class Error extends Vue {
     @Prop() error : any = null;
     head () {
-      const title =
-        this.error.statusCode === 404 ? this.pageNotFound : this.otherError
+      const title = this.error.statusCode === 404 ? this.pageNotFound : this.otherError
       return {
         title
       }
     }
+
     pageNotFound: string = '404 Not Found';
     otherError: string = 'An error occurred';
-  }
+}
 </script>
 
 <style scoped>

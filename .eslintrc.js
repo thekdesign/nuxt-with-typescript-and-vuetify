@@ -1,19 +1,12 @@
 module.exports = {
   root: true,
+  extends: [
+    '@nuxtjs/eslint-config-typescript'
+  ],
   env: {
     browser: true,
     node: true
   },
-  parserOptions: {
-    parser: 'babel-eslint',
-    ecmaFeatures: {
-      legacyDecorators: true
-    }
-  },
-  extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
-  ],
   // add your custom rules here
   rules: {
   }
